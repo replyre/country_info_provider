@@ -50,3 +50,7 @@ search.addEventListener("click", () => {
       }
     });
 });
+
+countryName.addEventListener("keypress", (e) => {
+  if (e.key == "Enter") search.click();
+});
