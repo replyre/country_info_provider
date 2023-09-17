@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  background-image: linear-gradient(
+    to top left,
+    rgb(214, 28, 66),
+    rgb(244, 66, 102),
+    rgb(214, 28, 66)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 3em 2.5em;
+  width: 80vw;
+  max-width: 37.5em;
+  border-radius: 0.62em;
+  box-shadow: 0 1.25em 1.8em rgba(0, 21, 65, 0.25);
+}
+
+.search-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.25em;
+}
+
+.search-wrapper button {
+  font-size: 1em;
+  background-color: crimson;
+  color: white;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 1.5em;
+  min-width: 100px;
+}
+
+.search-wrapper button:hover {
+  background-color: rgba(194, 19, 54);
+}
+
+.search-wrapper button:active {
+  transition: all 0.2s ease-in;
+  background-color: crimson;
+  transform: scale(0.9);
+}
+.search-wrapper input {
+  background-color: transparent;
+  font-size: 1em;
+  padding: 0 0.62em;
+  border: none;
+  border-bottom: 2px solid crimson;
+  outline: none;
+  color: #432222;
+  max-width: 80%;
+}
+
+.container .flag-img {
+  display: block;
+  width: 45%;
+  min-width: 7.5rem;
+  margin: 1.8rem auto 1.2em auto;
+}
+
+.container h2 {
+  font-weight: 600;
+  color: rgb(234, 34, 74);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.8rem;
+}
+
+.data-wrapper {
+  margin-bottom: 1em;
+  letter-spacing: 0.3px;
+  display: flex;
+  gap: 10px;
+}
+
+.container h4 {
+  font-weight: 600;
+  color: rgb(234, 34, 74);
+}
+
+.container span {
+  color: rgb(234, 34, 74, 0.9);
+}
+.container h3 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  color: #ff465a;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .search-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-wrapper button {
+    width: 100%;
+  }
+  .data-wrapper {
+    flex-direction: column;
+  }
+}
